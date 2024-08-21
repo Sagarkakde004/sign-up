@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(pink, blue);
+}
+
+form {
+   
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ff69b4;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+}
+
+fieldset {
+    border: 1px solid #ff69b4;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);   
+}
+
+legend {
+    font-size: large;
+    font-weight: bold;
+    color: #ff69b4; 
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    color: #333;
+    font-weight: 450;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ff69b4; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+button {
+    display: block;
+    padding: 10px;
+    width: 20%;
+    background-color: #533ca5 ;
+    color: white;
+    border: none;
+    margin-left: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#b7207f;
+}
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your Fullname"><br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender</label>
+            <div style="display: flex;"><label for="MALE">Male</label><input type="radio" id="MALE" name="Gender" value="MALE" placeholder="Male"><label for="female">Female</label><input type="radio" id="female" name="Gender" value="female"><label for="TRANSGENDER">Other</label><input type="radio" id="TRANSGENDER" name="Gender" value="TRANSGENDER"><br><br></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email"><br><br>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 __________"><br><br>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="Strite, Post, City, District"></textarea><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
