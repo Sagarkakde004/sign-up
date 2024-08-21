@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgb(205, 6, 175), blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            margin: 0;
+        }
+        .signup-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            height: 500px;
+        }
+        .signup-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .signup-form input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttonhead a{
+            
+        }
+        .signup-form .button a:hover {
+            background: rgb(44, 21, 102);
+        }
+        #para{
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            font-family: monospace;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 90%;
+            margin-bottom: 0;
+        }
+        #icon{
+            margin-top: 4px;
+            display: flex;
+            justify-content: center;
+            font-family: monospace;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 90%;
+        }
+    #h3{
+        margin-top: 40px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+    .or{
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: larger;
+        font-weight: 400;
+        color: #756e6e;
+        margin: 2px ;
+        text-align: center;
+        padding: 0;
+    }
+    #line{
+        display: inline;
+
+    }
+    .google-login{
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="signup-form">
+        <h2>Signup Form</h2>
+        <p id="para">Name  &nbsp; Contact &nbsp; Birth  &nbsp;Submit</p>
+        <div id="icon">
+            <div><i class="fa-regular fa-circle"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i></div>
+            <div><i class="fa-regular fa-circle"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i></div>
+            <div><i class="fa-regular fa-circle"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i></div>
+            <div><i class="fa-regular fa-circle"></i></div>
+        </div>
+        <div class="buttonhead">
+        <h3 id="h3">Personal Details</h3>
+        <form>
+            <label><b>First Name</b></label><input type="text" placeholder="Enter Your First Name" required>
+            <label><b>Last Name</b></label><input type="text" placeholder="Enter Your Last Name" required>
+            <div class="button">
+           <a href="css-final-contact.html" style="margin: 15px 15px 0px 15px;width: 40%;padding: 10px 10px;font-size: small;background: rgb(255, 0, 179);color: white;border: none;border-radius: 5px;cursor: pointer; text-align: center;">Next &raquo;</a>
+        </form> 
+        </div>
+        <p class="or">OR</p>
+        <div class="google-login"><p href="#" style="margin: 0px;width: 70%;padding: 10px 10px;font-size: small;background:  rgb(44, 21, 102);color: white;border: none;border-radius: 10px;cursor: pointer;text-align: center;display: flex;justify-content: center;">Login With Google</a>
+        </div>
+        <div style="font-size: small;text-align: center;">
+            <span>If already have account</span><span><a href="https://leetcode.com/accounts/login/" style="none;"><span>&nbsp;&nbsp;</span>Log-in</a></span>
+        </div>
+    </div>
+
+</body>
+</html>

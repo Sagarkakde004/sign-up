@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonderful Catering</title>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-image: linear-gradient(pink, blue);
+    }
+
+    header {
+      
+      background-color: none;
+      padding :0px 0px 0px 0px;
+      text-align: center;
+      position: relative;
+      margin-left: 1cm;
+      margin-bottom: 0;
+    }
+    .header-image{
+      margin-left: 10cm;
+      max-width: 100%;
+      height: 2cm;
+      border-top-left-radius: 3cm;
+      margin-bottom: 0;
+
+    }
+ 
+    .nav1 {
+      margin: 0;
+      background-color: #444;
+      padding-left: 12.5cm;
+      margin-left: 16cm;
+      border-top-left-radius: 3cm;
+   
+
+    }
+    .nav2{
+      margin-left: 22cm;
+      border-bottom-left-radius: 3cm;
+    }
+
+    nav a {
+      color:#f8f8f8;
+      text-decoration: none;
+      margin: 0 15px;
+      filter: drop-shadow(0 0 10px #fffdef)
+    }
+
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      color: rgb(123, 108, 159);
+      text-align: center;
+      padding: 100px;
+    }
+
+    .services {
+      list-style-position: inside;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .servic {
+      height: 50cm;
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .service {
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(69, 40, 164, 0.8);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    body{
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      box-sizing: border-box;
+
+    }
+.heading{
+    font-size: 2.25rem;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    font-family:'poppins';
+    text-align: center;
+    font-weight: 600;
+    transform: translateX(-50%) translateY(-50%);
+    line-height: 40px;
+    animation: animHeading 1s linear infinite;
+}
+ .heading span{
+    font-size: 1rem;
+    color: rgb(0, 156, 203);
+ }
+
+ @keyframes animHeading {
+    0%{
+        filter: drop-shadow(0px 0px 50px rgba(13, 166, 255, 0.826)) hue-rotate(0deg);
+    }
+    50%{
+        filter: drop-shadow(0px 0px 100px  rgba(13, 166, 255, 0.826)) hue-rotate(120deg);
+    }
+    100%{
+        filter: drop-shadow(0px 0px 100px  rgba(13, 166, 255, 0.826)) hue-rotate(0deg);
+    }
+ }
+  </style>
+</head>
+<body>
+    <header>
+        <img src="ca.jpg" alt="Catering sevice logo" class="header-image" height="600px" width="3000px">
+      </header>
+      <nav class="nav1">
+        <a href="#" class="nav">Home</a>
+        <a href="#" class="nav">Services</a>
+        <a href="#" class="nav">Menu</a>
+        <a href="#" class="nav">Contact</a>
+        <a href="./book.html" class="nav" >Booking</a>
+      </nav>
+      <hr class="nav2">
+      <canvas id="canvas" class="hero"></canvas>
+      <h1 class="heading">KASHI<br> <span>A Complete Event Solution</span></h1>
+
+      <div class="hero">
+        <h2>Exquisite Catering for Your Special Occasions</h2>
+        <p>Indulge in a culinary experience that delights your senses</p>
+        <a href="#services">Explore Services</a>
+      </div>
+    
+      <div id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Wedding Catering</h3>
+          <p>Elevate your wedding with our gourmet catering services. Unforgettable flavors, impeccable service.</p>
+        </div>
+        <div class="service">
+          <h3>Corporate Events</h3>
+          <p>Impress clients and colleagues with our professional catering for corporate events. Delicious and stylish.</p>
+        </div>
+        <div class="service">
+          <h3>Private Parties</h3>
+          <p>Celebrate life's special moments with our catering for private parties. Customized menus for every occasion.</p>
+        </div>
+      </div>
+ 
+  <footer>
+    <p>&copy; 2023 Wonderful Catering. All rights reserved.</p>
+  </footer>
+
+  <script>
+
+    const canvas = document.getElementById('canvas');
+
+const context = convas.getContext('2d');
+
+
+convas.width = window.innerWidth;
+convas.height = window.innerHeight;
+
+window.addEventListener('resize',()=>{
+    convas.width = window.innerWidth;
+    convas.height = window.innerHeight;
+})
+
+let FireRocketsArray = [];
+
+function FireRockets(){
+    this.x = Math.floor(Math.random() *window.innerWidth);
+    this.y = window.innerHeight;
+
+    this.color = 'hsl(${Math.floor(Math.random() * 360)}, 70%,50%)';
+        this.y -=this.speedY;
+    }
+    this.draw = ()=>{
+        context.fillstyle = this.color;
+        context.beginPath();
+        context.arc(this.x,this.y,this.size,0,Math.PI*2);
+        context.fill();
+    }
+function renderFireRockets() {
+    for (let i =0; i<FireRocketsArray.length; i++){
+        FireRocketsArray[i].draw();
+        FireRocketsArray[i].update();
+        if(FireRocketsArray[i].y <= FireRocketsArray[i].crackRocketY) {
+           FireRocketsArray.slice(i,1);
+           i--;
+        }
+    }
+}
+function animate() {
+    context.fillStyle = 'rgba(24, 28, 31,.2)';
+    context.fillRect(0,0,canvas.width,canvas.height);
+    renderFireRockets()
+    requestAnimationFrame(animate);
+}
+
+FireRocketsArray.push(new FireRockets());
+animate()
+    
+  </script>
+
+</body>
+</html>

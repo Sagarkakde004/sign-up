@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgb(205, 6, 175), blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            margin: 0;
+        }
+        .signup-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            height: 500px;
+        }
+        .survey-form fieldset {
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .survey-form legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .survey-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .signup-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .signup-form a {
+            margin: 15px;
+            width: 40%;
+            padding: 10px 10px;
+            font-size: small;
+            background: rgb(255, 0, 179);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .signup-form a:hover {
+            background: rgb(44, 21, 102);
+        }
+        #para{
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            font-family: monospace;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 90%;
+            margin-bottom: 0;
+        }
+        #icon{
+            margin-top: 4px;
+            display: flex;
+            justify-content: center;
+            font-family: monospace;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 90%;
+        }
+    .h3{
+        margin-top: 40px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="signup-form">
+        <h2>Signup Form</h2>
+        <p id="para">Name  &nbsp; Contact &nbsp; Birth  &nbsp;Submit</p>
+        <div id="icon">
+            <div style="background-color: red; color: none; border-radius: 50%;"><i class="fa-regular fa-circle-check"></div><div></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i></div>
+            <div style="background-color: red; color: none; border-radius: 50%;"><i class="fa-regular fa-circle-check"></div><div></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i></div>
+            <div style="background-color: red; color: none; border-radius: 50%;"><i class="fa-regular fa-circle-check"></div><div></i></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-minus"></i></div>
+            <div><i class="fa-regular fa-circle"></i></div>
+        </div>
+        <h3 class="h3">Use Checkbox For Responce</h3>
+        <form>
+            <form class="survey-form">
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <label>
+                        <input type="radio" name="source" value="internet" required> Internet
+                    </label>
+                    <label>
+                        <input type="radio" name="source" value="friend"> Friend
+                    </label><br>
+                    <label>
+                        <input type="radio" name="source" value="advertisement"> Advertisement
+                    </label>
+                    <label>
+                        <input type="radio" name="source" value="other"> Other
+                    </label>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Select your interests:</legend>
+                    <label>
+                        <input type="checkbox" name="interests" value="technology"> Technology
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="sports"> Sports
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="music"> Music
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="travel"> Travel
+                    </label>
+                </fieldset>
+            </form>
+            <div class="button">
+                <a href="css-final-birth.html" class="previous">&laquo; Previous</a>
+                <a href="css-final-congratulation.html" class="next">Submit</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
